@@ -74,7 +74,7 @@
 
   <div class="gridster ready">
     <ul style="height: 800px; width: 600px; position: relative;">
-      <li data-row="0" data-col="0" data-sizex="5" data-sizey="5" class="gs-w" style="min-width: 100px; min-height: 55px;">DASH0<span class="gs-resize-handle gs-resize-handle-both"></span></li>
+      <li data-row="0" data-col="0" data-sizex="5" data-sizey="5" class="gs-w" style="min-width: 100px; min-height: 55px;"><div id="container" style="min-width: 200px; height: 300px; max-width: 600px; margin: 0 auto"></div><span class="gs-resize-handle gs-resize-handle-both"></span></li>
       <li data-row="1" data-col="1" data-sizex="1" data-sizey="2" class="gs-w">DASH1<span class="gs-resize-handle gs-resize-handle-both"></span></li>
       <li data-row="2" data-col="2" data-sizex="1" data-sizey="1" class="gs-w">DASH2<span class="gs-resize-handle gs-resize-handle-both"></span></li>
       <li data-row="3" data-col="3" data-sizex="3" data-sizey="1" class="gs-w">DASH3<span class="gs-resize-handle gs-resize-handle-both"></span></li>
@@ -89,6 +89,70 @@
 
     <script type="text/javascript" src="files/jquery.js"></script>
     <script src="files/jquery.gridster.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script type="text/javascript">
+
+    $(function () {
+
+    $(document).ready(function () {
+
+        // Build the chart
+        $('#container').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            title: {
+                text: 'Browser market shares January, 2015 to May, 2015'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Brands',
+                colorByPoint: true,
+                data: [{
+                    name: 'Microsoft Internet Explorer',
+                    y: 56.33
+                }, {
+                    name: 'Chrome',
+                    y: 24.03,
+                    sliced: true,
+                    selected: true
+                }, {
+                    name: 'Firefox',
+                    y: 10.38
+                }, {
+                    name: 'Safari',
+                    y: 4.77
+                }, {
+                    name: 'Opera',
+                    y: 0.91
+                }, {
+                    name: 'Proprietary or Undetectable',
+                    y: 0.2
+                }]
+            }]
+        });
+    });
+    });
+
+    </script>
+
 
     <script type="text/javascript">
       var gridster;
