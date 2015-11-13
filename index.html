@@ -1,82 +1,83 @@
 <!DOCTYPE html>
 <!-- saved from url=(0049)http://gridster.net/demos/dynamic-grid-width.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Dashboards OTRS</title>
-  <link rel="stylesheet" type="text/css" href="files/jquery.gridster.css">
-  <link rel="stylesheet" type="text/css" href="files/demo.css">
-<style type="text/css"> [data-col="13"] { left:1325px; }
- [data-col="12"] { left:1215px; }
- [data-col="11"] { left:1105px; }
- [data-col="10"] { left:995px; }
- [data-col="9"] { left:885px; }
- [data-col="8"] { left:775px; }
- [data-col="7"] { left:665px; }
- [data-col="6"] { left:555px; }
- [data-col="5"] { left:445px; }
- [data-col="4"] { left:335px; }
- [data-col="3"] { left:225px; }
- [data-col="2"] { left:115px; }
- [data-col="1"] { left:5px; }
- [data-row="19"] { top:1175px; }
- [data-row="18"] { top:1110px; }
- [data-row="17"] { top:1045px; }
- [data-row="16"] { top:980px; }
- [data-row="15"] { top:915px; }
- [data-row="14"] { top:850px; }
- [data-row="13"] { top:785px; }
- [data-row="12"] { top:720px; }
- [data-row="11"] { top:655px; }
- [data-row="10"] { top:590px; }
- [data-row="9"] { top:525px; }
- [data-row="8"] { top:460px; }
- [data-row="7"] { top:395px; }
- [data-row="6"] { top:330px; }
- [data-row="5"] { top:265px; }
- [data-row="4"] { top:200px; }
- [data-row="3"] { top:135px; }
- [data-row="2"] { top:70px; }
- [data-row="1"] { top:5px; }
- [data-sizey="1"] { height:55px; }
- [data-sizey="2"] { height:120px; }
- [data-sizey="3"] { height:185px; }
- [data-sizey="4"] { height:250px; }
- [data-sizey="5"] { height:315px; }
- [data-sizey="6"] { height:380px; }
- [data-sizey="7"] { height:445px; }
- [data-sizey="8"] { height:510px; }
- [data-sizey="9"] { height:575px; }
- [data-sizey="10"] { height:640px; }
- [data-sizey="11"] { height:705px; }
- [data-sizey="12"] { height:770px; }
- [data-sizey="13"] { height:835px; }
- [data-sizey="14"] { height:900px; }
- [data-sizey="15"] { height:965px; }
- [data-sizey="16"] { height:1030px; }
- [data-sizey="17"] { height:1095px; }
- [data-sizey="18"] { height:1160px; }
- [data-sizex="1"] { width:100px; }
- [data-sizex="2"] { width:210px; }
- [data-sizex="3"] { width:320px; }
- [data-sizex="4"] { width:430px; }
- [data-sizex="5"] { width:540px; }
- [data-sizex="6"] { width:650px; }
- [data-sizex="7"] { width:760px; }
- [data-sizex="8"] { width:870px; }
- [data-sizex="9"] { width:980px; }
- [data-sizex="10"] { width:1090px; }
- [data-sizex="11"] { width:1200px; }
- [data-sizex="12"] { width:1310px; }
-</style></head>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Dashboards para o OTRS</title>
+    <link rel="stylesheet" type="text/css" href="files/jquery.gridster.css">
+    <link rel="stylesheet" type="text/css" href="files/demo.css">
+    <style type="text/css"> [data-col="13"] { left:1325px; }
+     [data-col="12"] { left:1215px; }
+     [data-col="11"] { left:1105px; }
+     [data-col="10"] { left:995px; }
+     [data-col="9"] { left:885px; }
+     [data-col="8"] { left:775px; }
+     [data-col="7"] { left:665px; }
+     [data-col="6"] { left:555px; }
+     [data-col="5"] { left:445px; }
+     [data-col="4"] { left:335px; }
+     [data-col="3"] { left:225px; }
+     [data-col="2"] { left:115px; }
+     [data-col="1"] { left:5px; }
+     [data-row="19"] { top:1175px; }
+     [data-row="18"] { top:1110px; }
+     [data-row="17"] { top:1045px; }
+     [data-row="16"] { top:980px; }
+     [data-row="15"] { top:915px; }
+     [data-row="14"] { top:850px; }
+     [data-row="13"] { top:785px; }
+     [data-row="12"] { top:720px; }
+     [data-row="11"] { top:655px; }
+     [data-row="10"] { top:590px; }
+     [data-row="9"] { top:525px; }
+     [data-row="8"] { top:460px; }
+     [data-row="7"] { top:395px; }
+     [data-row="6"] { top:330px; }
+     [data-row="5"] { top:265px; }
+     [data-row="4"] { top:200px; }
+     [data-row="3"] { top:135px; }
+     [data-row="2"] { top:70px; }
+     [data-row="1"] { top:5px; }
+     [data-sizey="1"] { height:55px; }
+     [data-sizey="2"] { height:120px; }
+     [data-sizey="3"] { height:185px; }
+     [data-sizey="4"] { height:250px; }
+     [data-sizey="5"] { height:315px; }
+     [data-sizey="6"] { height:380px; }
+     [data-sizey="7"] { height:445px; }
+     [data-sizey="8"] { height:510px; }
+     [data-sizey="9"] { height:575px; }
+     [data-sizey="10"] { height:640px; }
+     [data-sizey="11"] { height:705px; }
+     [data-sizey="12"] { height:770px; }
+     [data-sizey="13"] { height:835px; }
+     [data-sizey="14"] { height:900px; }
+     [data-sizey="15"] { height:965px; }
+     [data-sizey="16"] { height:1030px; }
+     [data-sizey="17"] { height:1095px; }
+     [data-sizey="18"] { height:1160px; }
+     [data-sizex="1"] { width:100px; }
+     [data-sizex="2"] { width:210px; }
+     [data-sizex="3"] { width:320px; }
+     [data-sizex="4"] { width:430px; }
+     [data-sizex="5"] { width:540px; }
+     [data-sizex="6"] { width:650px; }
+     [data-sizex="7"] { width:760px; }
+     [data-sizex="8"] { width:870px; }
+     [data-sizex="9"] { width:980px; }
+     [data-sizex="10"] { width:1090px; }
+     [data-sizex="11"] { width:1200px; }
+     [data-sizex="12"] { width:1310px; }
+    </style>
+</head>
+<body >
+  <center><h1>Dashboards Gerenciais do OTRS</h1></center>
 
-<body>
-
-  <h1>Dashboards OTRS</h1>
-
-  <div class="gridster ready">
-    <ul style="height: 800px; width: 600px; position: relative;">
+    <div class="gridster ready">
+    <ul style="height: 800px; width: 600px; position: relative; background-color: black;">
 
       <li data-row="1" data-col="1" data-sizex="5" data-sizey="5" class="gs-w" style="min-width: 100px; min-height: 55px;">
-        <div id="container" style="width:100%;height:100%;margin: 0 auto"></div>
+        <div id="container" style="width:100%;height:100%;margin: 0 auto;"></div>
         <span class="gs-resize-handle gs-resize-handle-both"></span>
       </li>
 
@@ -100,7 +101,7 @@
         <span class="gs-resize-handle gs-resize-handle-both"></span>
       </li>
     </ul>
-  </div>
+    </div>
 
     <script type="text/javascript" src="files/jquery.js"></script>
     <script src="files/jquery.gridster.js" type="text/javascript" charset="utf-8"></script>
@@ -109,6 +110,7 @@
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/highcharts-more.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
     <!-- script Pier Chart -->
     <script type="text/javascript">
     $(function () {
@@ -117,52 +119,82 @@
 
         // Build the chart
         $('#container').highcharts({
+            colors: ["#2b908f", "#90ee7e", "#f45b5b", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee",
+      "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
             chart: {
                 plotBackgroundColor: null,
                 plotBorderWidth: null,
                 plotShadow: false,
-                type: 'pie'
+                type: 'pie',
+                backgroundColor:'#444'
+            },
+            credits: {
+                enabled: false
             },
             title: {
-                text: 'Browser market shares January, 2015 to May, 2015'
+                text: 'CHAMADOS ABERTOS POR FILA',
+                style: {
+                    color: '#FFF',
+                    font: 'bold 16px "Trebuchet MS", Verdana, sans-serif'
+                }
             },
             tooltip: {
-                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>',
+                style: {
+                    color: '#000',
+                    font: 'bold 16px "Trebuchet MS", Verdana, sans-serif'
+                }
             },
             plotOptions: {
+
                 pie: {
                     allowPointSelect: true,
                     cursor: 'pointer',
                     dataLabels: {
                         enabled: false
                     },
-                    showInLegend: true
-                }
+                    showInLegend: true,
+                },
+
             },
+
+            legend: {
+      itemStyle: {
+         color: '#E0E0E3'
+      },
+      itemHoverStyle: {
+         color: '#FFF'
+      },
+      itemHiddenStyle: {
+         color: '#606063'
+      }
+   },
+
             series: [{
-                name: 'Brands',
+                name: 'Porcentagem',
                 colorByPoint: true,
                 data: [{
-                    name: 'Microsoft Internet Explorer',
-                    y: 56.33
+                    name: 'Ponto de Atendimento',
+                    fontSize: '20px',
+                    y: 56.33,
                 }, {
-                    name: 'Chrome',
+                    name: 'Infraestrutura',
                     y: 24.03,
                     sliced: true,
                     selected: true
                 }, {
-                    name: 'Firefox',
+                    name: 'Sistemas Internos',
                     y: 10.38
                 }, {
-                    name: 'Safari',
+                    name: 'Banco de dados',
                     y: 4.77
                 }, {
-                    name: 'Opera',
+                    name: 'Impressão',
                     y: 0.91
                 }, {
-                    name: 'Proprietary or Undetectable',
+                    name: 'Telefonia',
                     y: 0.2
-                }]
+                }],
             }]
         });
     });
@@ -180,10 +212,12 @@
         });
 
         $('#container2').highcharts({
+
             chart: {
                 type: 'spline',
                 animation: Highcharts.svg, // don't animate in old IE
                 marginRight: 10,
+                backgroundColor:'#444',
                 events: {
                     load: function () {
 
@@ -195,19 +229,55 @@
                             series.addPoint([x, y], true, true);
                         }, 1000);
                     }
-                }
+                },
+
+            },
+            credits: {
+                enabled: false
             },
             title: {
-                text: 'Live random data'
+                text: 'TEMPO MÉDIO DE ATENDIMENTO DOS CHAMADOS DE INFRAESTUTURA',
+                style: {
+                    color: '#FFF',
+                    font: 'bold 16px "Trebuchet MS", Verdana, sans-serif'
+                }
             },
             xAxis: {
-                type: 'datetime',
-                tickPixelInterval: 150
+                  type: 'datetime',
+                  tickPixelInterval: 150,
+                  gridLineColor: '#707073',
+                  labels: {
+                     style: {
+                        color: '#E0E0E3'
+                     }
+                  },
+                  lineColor: '#707073',
+                  minorGridLineColor: '#505053',
+                  tickColor: '#707073',
+                  title: {
+                     style: {
+                        color: '#A0A0A3'
+
+                     }
+                  },
             },
             yAxis: {
-                title: {
-                    text: 'Value'
-                },
+                  gridLineColor: '#707073',
+                  labels: {
+                     style: {
+                        color: '#E0E0E3'
+                     }
+                  },
+                  lineColor: '#707073',
+                  minorGridLineColor: '#505053',
+                  tickColor: '#707073',
+                  tickWidth: 1,
+                  title: {
+                    text: 'Valores',
+                     style: {
+                        color: '#A0A0A3'
+                     }
+                  },
                 plotLines: [{
                     value: 0,
                     width: 1,
@@ -252,37 +322,96 @@
     <script type="text/javascript">
     $(function () {
     $('#container3').highcharts({
+        chart: {
+            backgroundColor:'#444'
+        },
         title: {
-            text: 'Combination chart'
+            text: 'CHAMADOS ABERTOS POR ATENDENTE',
+            style: {
+                color: '#FFF',
+                font: 'bold 16px "Trebuchet MS", Verdana, sans-serif'
+            }
         },
-        xAxis: {
-            categories: ['Apples', 'Oranges', 'Pears', 'Bananas', 'Plums']
+        xAxis: {gridLineColor: '#707073',
+      labels: {
+         style: {
+            color: '#E0E0E3'
+         }
+      },
+      lineColor: '#707073',
+      minorGridLineColor: '#505053',
+      tickColor: '#707073',
+      title: {
+         style: {
+            color: '#A0A0A3'
+
+         }
+      },
+            categories: ['André', 'João', 'Pedro', 'Tiago', 'José']
         },
+        yAxis: {
+                  gridLineColor: '#707073',
+                  labels: {
+                     style: {
+                        color: '#E0E0E3'
+                     }
+                  },
+                  lineColor: '#707073',
+                  minorGridLineColor: '#505053',
+                  tickColor: '#707073',
+                  tickWidth: 1,
+                  title: {
+                    text: 'Valores',
+                     style: {
+                        color: '#A0A0A3'
+                     }
+                  },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
         labels: {
+            
             items: [{
-                html: 'Total fruit consumption',
+                html: 'Total por tipo',
                 style: {
                     left: '50px',
                     top: '18px',
-                    color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+                    color: (Highcharts.theme && Highcharts.theme.textColor) || '#E0E0E3'
                 }
             }]
         },
+        credits: {
+                enabled: false
+            },
+            legend: {
+      itemStyle: {
+         color: '#E0E0E3'
+      },
+      itemHoverStyle: {
+         color: '#FFF'
+      },
+      itemHiddenStyle: {
+         color: '#606063'
+      }
+   },
         series: [{
             type: 'column',
-            name: 'Jane',
+            name: 'Requisição',
             data: [3, 2, 1, 3, 4]
         }, {
             type: 'column',
-            name: 'John',
+            name: 'Incidentes',
             data: [2, 3, 5, 7, 6]
         }, {
             type: 'column',
-            name: 'Joe',
+            name: 'Problemas',
             data: [4, 3, 3, 9, 0]
         }, {
             type: 'spline',
-            name: 'Average',
+            name: 'Média',
             data: [3, 2.67, 3, 6.33, 3.33],
             marker: {
                 lineWidth: 2,
@@ -291,17 +420,17 @@
             }
         }, {
             type: 'pie',
-            name: 'Total consumption',
+            name: 'Total',
             data: [{
-                name: 'Jane',
+                name: 'Requisição',
                 y: 13,
                 color: Highcharts.getOptions().colors[0] // Jane's color
             }, {
-                name: 'John',
+                name: 'Incidentes',
                 y: 23,
                 color: Highcharts.getOptions().colors[1] // John's color
             }, {
-                name: 'Joe',
+                name: 'Problemas',
                 y: 19,
                 color: Highcharts.getOptions().colors[2] // Joe's color
             }],
@@ -323,21 +452,43 @@
 
         chart: {
             polar: true,
-            type: 'line'
+            type: 'line',
+            backgroundColor:'#444'
         },
 
         title: {
-            text: 'Budget vs spending',
-            x: -80
+            text: 'SLA DE PRIMEIRA RESPOSTA',
+            style: {
+                color: '#FFF',
+                font: 'bold 16px "Trebuchet MS", Verdana, sans-serif'
+            }
+        },
+        credits: {
+                enabled: false
         },
 
         pane: {
-            size: '80%'
+            size: '90%'
         },
 
         xAxis: {
-            categories: ['Sales', 'Marketing', 'Development', 'Customer Support',
-                    'Information Technology', 'Administration'],
+            gridLineColor: '#707073',
+      labels: {
+         style: {
+            color: '#E0E0E3'
+         }
+      },
+      lineColor: '#707073',
+      minorGridLineColor: '#505053',
+      tickColor: '#707073',
+      tickWidth: 1,
+      title: {
+         style: {
+            color: '#A0A0A3'
+         }
+      },
+            categories: ['Telefonia', 'Sistemas', 'Infraestrutura', 'Banco de dados',
+                    'Impressão', 'Redes'],
             tickmarkPlacement: 'on',
             lineWidth: 0
         },
@@ -357,17 +508,28 @@
             align: 'right',
             verticalAlign: 'top',
             y: 70,
-            layout: 'vertical'
+            layout: 'vertical',
+            itemStyle: {
+             color: '#E0E0E3'
+            },
+            itemHoverStyle: {
+             color: '#FFF'
+            },
+            itemHiddenStyle: {
+             color: '#606063'
+            }
         },
 
         series: [{
-            name: 'Allocated Budget',
+            name: 'SLA Realizado',
             data: [43000, 19000, 60000, 35000, 17000, 10000],
-            pointPlacement: 'on'
+            pointPlacement: 'on',
+            color: '#f45b5b'
         }, {
-            name: 'Actual Spending',
+            name: 'SLA Planejado',
             data: [50000, 39000, 42000, 31000, 26000, 14000],
-            pointPlacement: 'on'
+            pointPlacement: 'on',
+            color: '#2b908f',
         }]
 
       });
@@ -385,11 +547,16 @@
             plotBackgroundColor: null,
             plotBackgroundImage: null,
             plotBorderWidth: 0,
-            plotShadow: false
+            plotShadow: false,
+            backgroundColor:'#444'
         },
 
         title: {
-            text: 'Speedometer'
+            text: 'BACKLOG',
+            style: {
+                color: '#FFF',
+                font: 'bold 16px "Trebuchet MS", Verdana, sans-serif'
+            } 
         },
 
         pane: {
@@ -423,6 +590,10 @@
                 outerRadius: '105%',
                 innerRadius: '103%'
             }]
+        },
+
+        credits: {
+                enabled: false
         },
 
         // the value axis
@@ -491,7 +662,7 @@
         }
     });
   });
-    </script>>
+    </script>
 
     <script type="text/javascript">
     var gridster;
@@ -546,6 +717,6 @@
 
       });
     </script>
-
-
-</body><object id="3a588baa-ba98-978d-286b-c9b4098281b2" width="0" height="0" type="application/gas-events-bb"></object></html>
+</body>
+<object id="3a588baa-ba98-978d-286b-c9b4098281b2" width="0" height="0" type="application/gas-events-bb"></object>
+</html>
