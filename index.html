@@ -76,27 +76,27 @@
     <div class="gridster ready">
     <ul style="height: 800px; width: 600px; position: relative; background-color: black;">
 
-      <li data-row="1" data-col="1" data-sizex="5" data-sizey="5" class="gs-w" style="min-width: 100px; min-height: 55px;">
+      <li data-row="1" data-col="1" data-sizex="4" data-sizey="5" class="gs-w" style="min-width: 100px; min-height: 55px;">
         <div id="container" style="width:100%;height:100%;margin: 0 auto;"></div>
         <span class="gs-resize-handle gs-resize-handle-both"></span>
       </li>
 
-     <li data-row="1" data-col="6" data-sizex="5" data-sizey="5" class="gs-w" style="min-width: 100px; min-height: 200px;">
+     <li data-row="1" data-col="8" data-sizex="4" data-sizey="5" class="gs-w" style="min-width: 100px; min-height: 200px;">
         <div id="container2" style="width:100%;height:100%;margin: 0 auto"></div>
         <span class="gs-resize-handle gs-resize-handle-both"></span>
       </li>
 
-      <li data-row="6" data-col="1" data-sizex="5" data-sizey="5" class="gs-w" style="min-width: 100px; min-height: 55px;">
+      <li data-row="6" data-col="2" data-sizex="5" data-sizey="5" class="gs-w" style="min-width: 100px; min-height: 55px;">
         <div id="container3" style="width:100%;height:100%;margin: 0 auto"></div>
         <span class="gs-resize-handle gs-resize-handle-both"></span>
       </li>
 
-      <li data-row="6" data-col="6" data-sizex="5" data-sizey="5" class="gs-w" style="min-width: 100px; min-height: 55px;">
+      <li data-row="6" data-col="7" data-sizex="5" data-sizey="5" class="gs-w" style="min-width: 100px; min-height: 55px;">
         <div id="container4" style="width:100%;height:100%;margin: 0 auto"></div>
         <span class="gs-resize-handle gs-resize-handle-both"></span>
       </li>
 
-       <li data-row="12" data-col="1" data-sizex="5" data-sizey="5" class="gs-w" style="min-width: 100px; min-height: 55px;">
+       <li data-row="1" data-col="5" data-sizex="3" data-sizey="5" class="gs-w" style="min-width: 100px; min-height: 55px;">
         <div id="container5" style="width:100%;height:100%;margin: 0 auto"></div>
         <span class="gs-resize-handle gs-resize-handle-both"></span>
       </li>
@@ -118,6 +118,7 @@
     $(document).ready(function () {
 
         // Build the chart
+        // container 1
         $('#container').highcharts({
             colors: ["#2b908f", "#90ee7e", "#f45b5b", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee",
       "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
@@ -373,7 +374,7 @@
                 }]
             },
         labels: {
-            
+
             items: [{
                 html: 'Total por tipo',
                 style: {
@@ -556,7 +557,7 @@
             style: {
                 color: '#FFF',
                 font: 'bold 16px "Trebuchet MS", Verdana, sans-serif'
-            } 
+            }
         },
 
         pane: {
